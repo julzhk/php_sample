@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Sampi Plan</title>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.7.2.custom.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.jqplot.min.css">
+<link rel="stylesheet" type="text/css" href="css/ui.autocomplete.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.loadmask.css">
+<!-- Files for our style customizations -->
+<link rel="stylesheet" type="text/css" href="css/full_size.css">
+
+</head>
+<body class="ui-helper-reset">
+    <div id="loading" class="ui-widget">
+        <a class="sampi_icon" title="Sampi Plan" href="http://www.sampiplan.com">&nbsp</a>
+        <div class="loading_message">Loading Sampi Plan<br>If you do not see a login prompt appear, you may have Javascript turned off.</div>
+    </div>
+<!-- js -->
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">$('.loading_message').text('Loading Sampi Plan');</script>
+<script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-1.3.rc11.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<!--[if IE]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="js/plugins/jqplot.dateAxisRenderer.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.treeview.js"></script>
+<script type="text/javascript" src="js/jquery.text-overflow.min.js"></script>
+<script type="text/javascript" src="js/jquery.timepickr.js"></script>
+<script type="text/javascript" src="js/ui/ui.autocomplete.js"></script>
+<script type="text/javascript" src="js/jquery.loadmask.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/sampi.comm.js"></script>
+<script type="text/javascript" src="js/sampi.sys.js"></script>
+<script type="text/javascript" src="js/sampi.constants.js"></script>
+<script type="text/javascript" src="js/sampi.dataset.js"></script>
+<script type="text/javascript" src="js/sampi.views.js"></script>
+<script type="text/javascript" src="js/sampi.layout.js"></script>
+<script type="text/javascript" src="js/sampi.nav.js"></script>
+<script type="text/javascript" src="js/sampi.form.js"></script>
+<script type="text/javascript" src="js/sampi.datacache.js"></script>
+<script type="text/javascript" src="js/sampi.tree.js"></script>
+<script type="text/javascript" src="js/sampi.formref.js"></script>
+<script type="text/javascript" src="js/sampi.chart.js"></script>
+<script type="text/javascript" src="js/sampi.util.js"></script>
+<script type="text/javascript" src="js/sampi.report.js"></script>
+<script type="text/javascript" src="js/sampi.help.js"></script>
+<script type="text/javascript" src="js/nicEdit.js"></script>
+<script type="text/javascript">
+    var outerLayout='';
+    var sampiDic ={};
+    $(document).ready( function() {
+        $.lay.init.lang_select();
+    });
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+  feedback_widget_options.display = "overlay";
+  feedback_widget_options.company = "sampiplan";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#999";
+  feedback_widget_options.style = "idea";
+
+ var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+</body>
+</html>

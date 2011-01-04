@@ -1,0 +1,224 @@
+html, body { width: 100%; height: 100%; padding: 0; margin: 0; overflow: hidden; background-color: #ffffff;}
+div.layout { width: 96%; height: 96%; margin: .9% 1.9%; /* center */}
+.layout .ui-layout-west{width: 40%; margin-top: 0; margin-right: 0;}
+.login-form {margin: 20px;}
+.form_left {width: 40%;text-align: right;padding-right: 0.5em;}
+.form_right{width: 50%;}
+.form_left, .form_right{display: inline-block;}
+.fluffy {margin: 10px;padding: 10px;}
+a img{border-style: none;}
+#header-user{ float: right; clear: right; margin-left: 10px; margin-right: 0px;}
+#header-nav{margin-left: 0px; margin-right: 10px;}
+div.ui-dynatree-container{height: 100%; border: none;}
+span.ui-dynatree-vline{background-repeat: repeat;}
+#control, #header, #detail{padding: 5px 10px;}
+.treeview ul {margin-top: 0;}
+.treeview li {padding: 0 0 0 16px;}
+.object_sparkline{width: 30em; height: 10em; margin: 5px; padding: 0;}
+.report-list-chart{width: 95%; height: 80%;}
+.text-sm {}
+p.text-sm {margin:0;}
+.chart_block {padding-top: 10px;}
+.content-body {border: solid 1px #666600; padding:8px; background:none;margin-bottom:6px;margin-top:2px;}
+.content-header {border: solid 1px #666600;padding:0 8px;}
+p.single-line {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.ui-icon{display:inline-block;}
+.text_entry {width: 100%; display: block;}
+.ui-datepicker{z-index: 10010;}
+.input_group, .inline-block{display:inline-block;}
+.pad-left{padding-left:10px;}
+.pad-right{padding-right:10px;}
+.pad-top{padding-top:10px;}
+.pad-all{padding:10px;}
+.margin-top{margin-top:10px;}
+.margin-all{margin:10px;}
+.margin-lr{margin-left:10px; margin-right:10px;}
+.margin-left{margin-left:10px;}
+.margin-left-sm{margin-left:5px;}
+.inline-block{display:inline-block;}
+.timepicker{width:5em;}
+.ui-autocomplete-input{width: 400px;}
+.nicEdit-main{background:#ffffff;}
+.form_column_right, .form_column_left{display:inline-block;height:80%;}
+.base_holder, .target_holder, .select_holder{height:10em; overflow:auto; background-color:#fff;}
+.form_column_left{padding-right:2%;}
+.form_column_right{padding-left:2%;}
+.form_column_right, .form_column_left{width:48%;}
+#header-resizer {background-color:transparent;}
+a.user_icon img {height:40px; width:40px; border:solid 3px #0099cc;}
+.active-holder {padding-bottom:0px; background:transparent;}
+.active-holder.active {background:gray;}
+.ghost-name {font-style: italic;}
+.ui-layout-content {overflow: auto;}
+a.breadcrumb {font-size:x-small;}
+.header-breadcrumb {font-size:x-small;}
+.ui-widget a {text-decoration:none;}
+.ui-widget a:hover {text-decoration:underline;}
+/* Icons
+----------------------------------*/
+.urgency_1, .urgency_2, .urgency_3, .urgency_0, .urgency_4,
+.urgency_4_inactive, .urgency_1_inactive, .urgency_2_inactive, .urgency_3_inactive, .urgency_0_inactive,
+.is_team, .is_owner, .minus_icon, .plus_icon, .task_icon, .object_icon,
+.project_icon, .group_icon, .holder_object, .holder_object_inactive,
+.urgency_1_unchecked, .urgency_2_unchecked, .urgency_3_unchecked, .urgency_0_unchecked, .urgency_4_unchecked,
+.holder_object_unchecked,
+.urgency_1_checked, .urgency_2_checked, .urgency_3_checked, .urgency_0_checked, .urgency_4_checked,
+.holder_object_checked,.tasking, .read_only, .read_only_admin_icon, .write_admin_icon, .delete_admin_icon,
+.none_admin_icon, .file_admin_icon,
+.task_admin_icon, .project_admin_icon, .pro_admin_icon, .checked, .unchecked,
+.today_icon, .my_tasks_icon, .team_tasks_icon, .files_icon, .depot_icon, .reports_icon, .sampi_icon,
+.status_detail_icon, .share_detail_icon, .file_detail_icon, .team_detail_icon, .subs_detail_icon,
+.edit_icon, .add_status_icon, .add_message_icon, .add_file_icon, .add_task_icon, .move_object_icon,
+.logout_icon, .tools_icon, .help_icon, .user_icon, .user_admin_icon, .add_space_icon,
+.edit_team_icon, .edit_user_icon, .edit_security_icon, .edit_object_icon, .add_user_icon,
+.add_team_icon, .add_avatar_icon, .teams_detail_icon, .users_detail_icon, .user_info_detail_icon,
+.del_icon, .report_detail_icon, .tool_icon, .summary_detail_icon, .treeview .hitarea, .add_project_icon{
+    background: transparent url(../image/sampi_icons.png) no-repeat;}
+.urgency_1, .urgency_2, .urgency_3, .urgency_0, .urgency_4,
+.urgency_4_inactive, .urgency_1_inactive, .urgency_2_inactive, .urgency_3_inactive, .urgency_0_inactive,
+.is_team, .is_owner, .minus_icon, .plus_icon, .task_icon, .object_icon, 
+.project_icon, .group_icon, .holder_object, .holder_object_inactive, .checked, .unchecked{
+    width: 20px; height: 14px; display: inline; padding-left: 20px;}
+.today_icon, .my_tasks_icon, .team_tasks_icon, .files_icon, .depot_icon, .reports_icon,
+.logout_icon, .tools_icon, .help_icon, .user_icon{
+    width: 50px; height: 0px; display: inline-block; padding: 50px 0px 0px 0px; overflow:hidden;}
+.user_admin_icon, .add_space_icon{width: 65px; height: 0px; display: inline-block; padding: 40px 0px 0px 0px; overflow:hidden;}
+.sampi_icon {width: 64px; height: 0px; display: inline-block; padding: 35px 0px 0px 0px; overflow:hidden;}
+.edit_icon, .tool_icon {width: 20px; height: 0px; display: inline-block; padding: 20px 0px 0px 0px; overflow:hidden;}
+.add_status_icon, .add_message_icon, .add_file_icon, .add_task_icon, .move_object_icon,
+.edit_team_icon, .edit_user_icon, .edit_security_icon, .edit_object_icon, .add_user_icon,
+.add_team_icon, .add_avatar_icon, .del_icon, .add_project_icon{
+    width: 50px; height: 0px; display: inline-block; padding: 30px 0px 0px 0px; overflow:hidden;}
+.status_detail_icon, .share_detail_icon, .file_detail_icon, .team_detail_icon, .subs_detail_icon,
+.teams_detail_icon, .users_detail_icon, .user_info_detail_icon, .report_detail_icon, .summary_detail_icon{
+    width: 50px; height: 0px; display: inline-block; padding: 35px 0px 0px 0px; overflow:hidden;}
+a.today_icon, a.my_tasks_icon, a.team_tasks_icon, a.files_icon, a.depot_icon, a.reports_icon,
+a.logout_icon, a.tools_icon, a.help_icon{
+    font-size: 45px; text-decoration: none; line-height: 45px;}
+a.status_detail_icon, a.share_detail_icon, a.file_detail_icon, a.team_detail_icon, a.subs_detail_icon, a.report_detail_icon
+,a.summary_detail_icon{
+    font-size: 32px; text-decoration: none; line-height: 32px;}
+.urgency_1_unchecked, .urgency_2_unchecked, .urgency_3_unchecked, .urgency_0_unchecked, .urgency_4_unchecked,
+.holder_object_unchecked,
+.urgency_1_checked, .urgency_2_checked, .urgency_3_checked, .urgency_0_checked, .urgency_4_checked,
+.holder_object_checked{
+    width: 38px; height: 14px; display: inline; padding-left: 38px;font-size: 0.9em; text-decoration: none; line-height: 1.1em;}
+a.urgency_1, a.urgency_2, a.urgency_3, a.urgency_0, a.urgency_4,
+a.urgency_4_inactive, a.urgency_1_inactive, a.urgency_2_inactive, a.urgency_3_inactive, a.urgency_0_inactive,
+a.is_team, a.is_owner, a.minus_icon, a.plus_icon, a.task_icon, 
+a.object_icon, a.project_icon, a.group_icon, a.holder_object, a.holder_object_inactive{
+    font-size: 0.9em; text-decoration: none; line-height: 1.1em;}
+.tasking, .read_only, .read_only_admin_icon, .write_admin_icon, .delete_admin_icon, .none_admin_icon, .file_admin_icon,
+.task_admin_icon, .project_admin_icon, .pro_admin_icon {
+    width: 20px; height: 14px; display: inline; margin-bottom: -3px;}
+.urgency_1 {background-position: 0px -39px;}
+.urgency_2 {background-position: 0px -19px;}
+.urgency_3 {background-position: 0px 3px;}
+.urgency_0 {background-position: 0px -59px;}
+.urgency_4 {background-position: 0px -359px;}
+.urgency_4_inactive{background-position: 0px -379px;}
+.urgency_1_inactive{background-position: 0px -439px;}
+.urgency_2_inactive{background-position: 0px -419px;}
+.urgency_3_inactive{background-position: 0px -399px;}
+.urgency_0_inactive{background-position: 0px -459px;}
+.urgency_1_checked {background-position: 0px -679px;}
+.urgency_2_checked {background-position: 0px -659px;}
+.urgency_3_checked {background-position: 0px -639px;}
+.urgency_4_checked {background-position: 0px -699px;}
+.urgency_0_checked {background-position: 0px -719px;}
+.holder_object_checked {background-position: 0px -739px;}
+.urgency_1_unchecked {background-position: 0px -799px;}
+.urgency_2_unchecked {background-position: 0px -779px;}
+.urgency_3_unchecked {background-position: 0px -759px;}
+.urgency_4_unchecked {background-position: 0px -819px;}
+.urgency_0_unchecked {background-position: 0px -839px;}
+.holder_object_unchecked {background-position: 0px -859px;}
+.checked{background-position: 0px -879px;}
+.unchecked{background-position: 0px -899px;}
+.is_team .inactive{background-position: 0px -539px;}
+.is_owner .inactive{background-position: 0px -519px;}
+.minus_icon {background-position: 0px -339px;}
+.plus_icon {background-position: 0px -79px;}
+.task_icon {background-position: 0px -99px;}
+.object_icon{background-position: 0px -119px;}
+.project_icon{background-position: 0px -139px;}
+.group_icon{background-position: 0px -159px;}
+.holder_object {background-position: 0px -559px;}
+.holder_object_inactive{background-position: 0px -579px;}
+.read_only, .read_only_admin_icon {background-position: 0px -180px;}
+.read_write, .write_admin_icon {background-position: 0px -200px;}
+.delete_admin_icon {background-position: 0px -220px;}
+.none_admin_icon {background-position: 0px -240px;}
+.file_admin_icon {background-position: 0px -260px;}
+.tasking, .task_admin_icon {background-position: 0px -280px;}
+.project_admin_icon {background-position: 0px -300px;}
+.pro_admin_icon {background-position: 0px -320px;}
+.today_icon {background-position: 0px -919px;}
+.my_tasks_icon {background-position: 0px -979px;}
+.team_tasks_icon {background-position: 0px -1039px;}
+.files_icon {background-position: 0px -1099px;}
+.depot_icon {background-position: 0px -1159px;}
+.reports_icon {background-position: 0px -1219px;}
+.sampi_icon {background-position: 0px -1279px;}
+.status_detail_icon {background-position: 0px -1319px;}
+.share_detail_icon {background-position: 0px -1359px;}
+.file_detail_icon {background-position: 0px -1399px;}
+.team_detail_icon {background-position: 0px -1439px;}
+.subs_detail_icon {background-position: 0px -1479px;}
+.edit_icon {background-position: 0px -1519px;}
+a.edit_icon .hover {background-position: 0px -1549px;}
+.add_status_icon {background-position: 0px -1579px;}
+.add_message_icon {background-position: 0px -1609px;}
+.add_file_icon {background-position: 0px -1639px;}
+.add_task_icon {background-position: 0px -1669px;}
+.move_object_icon {background-position: 0px -1699px;}
+.logout_icon {background-position: 0px -1739px;}
+.tools_icon {background-position: 0px -1799px;}
+.help_icon {background-position: 0px -1859px;}
+.user_icon {background-position: 0px -1919px;}
+.user_admin_icon {background-position: 0px -1979px;}
+.add_space_icon {background-position: 0px -2029px;}
+.holder_object.oooo {background-position: 0px -559px;}
+.holder_object.looo {background-position: 0px -2079px;}
+.holder_object.oloo {background-position: 0px -2099px;}
+.holder_object.oolo {background-position: 0px -2119px;}
+.holder_object.oool {background-position: 0px -2139px;}
+.holder_object.lloo {background-position: 0px -2159px;}
+.holder_object.lolo {background-position: 0px -2179px;}
+.holder_object.lool {background-position: 0px -2199px;}
+.holder_object.ollo {background-position: 0px -2219px;}
+.holder_object.olol {background-position: 0px -2239px;}
+.holder_object.ooll {background-position: 0px -2259px;}
+.holder_object.lllo {background-position: 0px -2279px;}
+.holder_object.loll {background-position: 0px -2299px;}
+.holder_object.olll {background-position: 0px -2319px;}
+.holder_object.llol {background-position: 0px -2339px;}
+.holder_object.llll {background-position: 0px -2359px;}
+.edit_team_icon {background-position: 0px -2379px;}
+.edit_user_icon {background-position: 0px -2409px;}
+.edit_security_icon {background-position: 0px -2439px;}
+.edit_object_icon {background-position: 0px -2469px;}
+.add_user_icon {background-position: 0px -2499px;}
+.add_team_icon {background-position: 0px -2529px;}
+.add_avatar_icon {background-position: 0px -2559px;}
+.teams_detail_icon {background-position: 0px -2589px;}
+.users_detail_icon {background-position: 0px -2629px;}
+.user_info_detail_icon {background-position: 0px -2669px;}
+.del_icon {background-position: 0px -2709px;}
+.report_detail_icon{background-position: 0px -2749px;}
+.tool_icon {background-position: 0px -2799px;}
+.summary_detail_icon {background-position: 0px -2829px;}
+.add_project_icon {background-position: 0px -2869px;}
+
+/*Treeview Config*/
+.treeview, .treeview ul {padding:0; margin:0; list-style:none;}
+.treeview ul {margin-top:4px;}
+.treeview .hitarea{background-position: 0px -495px; height:18px; width:16px; margin-left:-16px; float:left; cursor:pointer;}
+/* fix for IE6 */
+* html .hitarea {display:inline; float:none;}
+.treeview li {margin:0; padding: 3px 0pt 3px 16px;}
+.treeview a.selected {background-color: #eee;}
+#treecontrol { margin: 1em 0; display: none; }
+.treeview .hover { color: red; cursor: pointer; }
+.treeview li.expandable, .treeview li.expandable div.expandable-hitarea, .treeview li.expandable div.open-hitarea.expandable-hitarea {background-position: 0px -475px;}
+.treeview li.collapsable, .treeview li.collapsable div.collapsable-hitarea, .treeview li.collapsable div.open-hitarea.collapsable-hitarea {background-position: 0px -495px;}

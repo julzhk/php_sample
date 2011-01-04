@@ -1,0 +1,32 @@
+php_value memory_limit 32M
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/x-json text/xml application/x-javascript application/javascript application/xhtml+xml
+    <FilesMatch "\\.(js|css|html|htm|xml)$">
+    SetOutputFilter DEFLATE
+    </FilesMatch>
+</IfModule>
+ExpiresActive on
+ExpiresByType image/jpeg A180
+ExpiresByType image/gif A180
+ExpiresByType image/png A180
+ExpiresByType application/javascript A180
+ExpiresByType text/css A180
+ExpiresByType text/html A1
+ExpiresByType text/x-json A1
+
+Header unset Etag
+FileETag none
+
+# disable directory browsing
+Options All -Indexes
+
+# diguise all file extensions as python
+#ForceType application/x-httpd-py
+RewriteEngine on
+ RewriteCond %{REQUEST_URI} !^/css/
+ RewriteCond %{REQUEST_URI} !^/image/
+ RewriteCond %{REQUEST_URI} !^/js/
+
+RewriteRule / index.html
+ 
